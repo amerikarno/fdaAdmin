@@ -1,11 +1,11 @@
-import 'package:finansiada/pages/home/widget/inputField.dart';
+import 'package:fda_admin_app/pages/home/widget/input_field.dart';
 import 'package:flutter/material.dart';
 
 class FormLogin extends StatelessWidget {
   final GlobalKey<FormState> formKey;
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passController = TextEditingController();
-  FormLogin({Key? key, required this.formKey}) : super(key: key);
+  FormLogin({super.key, required this.formKey});
 
   @override
   Widget build(BuildContext context) {

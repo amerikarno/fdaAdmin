@@ -1,6 +1,6 @@
-import 'package:finansiada/bloc/register/register_bloc.dart';
-import 'package:finansiada/bloc/user/login_bloc.dart';
-import 'package:finansiada/utils/regex.dart';
+import 'package:fda_admin_app/bloc/register/register_bloc.dart';
+import 'package:fda_admin_app/bloc/user/login_bloc.dart';
+import 'package:fda_admin_app/utils/regex.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -8,8 +8,7 @@ class FormInput extends StatefulWidget {
   final String text;
 
   final TextEditingController inputController;
-  const FormInput({Key? key, required this.inputController, required this.text})
-      : super(key: key);
+  const FormInput({super.key, required this.inputController, required this.text});
 
   @override
   State<FormInput> createState() => _FormInputState();

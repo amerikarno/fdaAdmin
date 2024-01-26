@@ -1,5 +1,5 @@
-import 'package:finansiada/bloc/register/register_bloc.dart';
-import 'package:finansiada/pages/home/widget/inputField.dart';
+import 'package:fda_admin_app/bloc/register/register_bloc.dart';
+import 'package:fda_admin_app/pages/home/widget/input_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -28,25 +28,33 @@ class FormRegister extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            FormInput(inputController: firstNameENController, text: "Firstname(EN)"),
+            FormInput(
+                inputController: firstNameENController, text: "Firstname(EN)"),
             const SizedBox(height: 20),
-            FormInput(inputController: lastNameENController, text: "Surname(EN)"),
+            FormInput(
+                inputController: lastNameENController, text: "Surname(EN)"),
             const SizedBox(height: 20),
-            FormInput(inputController: firstNameTHController, text: "Firstname(TH)"),
+            FormInput(
+                inputController: firstNameTHController, text: "Firstname(TH)"),
             const SizedBox(height: 20),
-            FormInput(inputController: lastNameTHController, text: "Surname(TH)"),
+            FormInput(
+                inputController: lastNameTHController, text: "Surname(TH)"),
             const SizedBox(height: 20),
-            FormInput(inputController: addressController, text: "Address Number"),
+            FormInput(
+                inputController: addressController, text: "Address Number"),
             const SizedBox(height: 20),
-            FormInput(inputController: vilageNumberController, text: "Vilage Number"),
+            FormInput(
+                inputController: vilageNumberController, text: "Vilage Number"),
             const SizedBox(height: 20),
-            FormInput(inputController: vilageNameController, text: "Vilage Name"),
+            FormInput(
+                inputController: vilageNameController, text: "Vilage Name"),
             const SizedBox(height: 20),
             FormInput(inputController: subStreetController, text: "Sub Street"),
             const SizedBox(height: 20),
             FormInput(inputController: streetController, text: "Street"),
             const SizedBox(height: 20),
-            FormInput(inputController: subDistrictController, text: "Sub District"),
+            FormInput(
+                inputController: subDistrictController, text: "Sub District"),
             const SizedBox(height: 20),
             FormInput(inputController: districtController, text: "Disctrict"),
             const SizedBox(height: 20),
@@ -63,13 +71,17 @@ class FormRegister extends StatelessWidget {
                     return !state.acceptAgreement
                         ? GestureDetector(
                             onTap: () {
-                              context.read<RegisterBloc>().add(const AgreementChange(true));
+                              context
+                                  .read<RegisterBloc>()
+                                  .add(AgreementChange(true));
                             },
                             child: const Icon(Icons.check_box_outline_blank),
                           )
                         : GestureDetector(
                             onTap: () {
-                              context.read<RegisterBloc>().add(const AgreementChange(false));
+                              context
+                                  .read<RegisterBloc>()
+                                  .add(AgreementChange(false));
                             },
                             child: const Icon(Icons.check_box_outlined),
                           );

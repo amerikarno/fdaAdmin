@@ -1,6 +1,6 @@
-import 'package:finansiada/pages/home/homePage.dart';
-import 'package:finansiada/pages/login/loginSuccess.dart';
-import 'package:finansiada/pages/register/registerBody.dart';
+import 'package:fda_admin_app/pages/home/home_page.dart';
+import 'package:fda_admin_app/pages/login/login_success.dart';
+import 'package:fda_admin_app/pages/register/register_body.dart';
 import 'package:flutter/material.dart';
 
 class AppRoute {

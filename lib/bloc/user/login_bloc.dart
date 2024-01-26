@@ -1,11 +1,11 @@
 import 'package:bloc/bloc.dart';
-import 'package:equatable/equatable.dart';
+import 'package:fda_admin_app/bloc/common_bloc.dart';
 
 part 'login_event.dart';
 part 'login_state.dart';
 
 class LoginBloc extends Bloc<LoginEvent, LoginState> {
-  LoginBloc() : super(const LoginState(email: '', password: '', obsecure: false)) {
+  LoginBloc() : super(LoginState(email: '', password: '', obsecure: false)) {
     on<LoginEvent>((event, emit) {});
 
     on<EmailChanged>((event, emit) {

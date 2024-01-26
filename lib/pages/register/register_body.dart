@@ -1,4 +1,4 @@
-import 'package:finansiada/bloc/register/register_bloc.dart';
+import 'package:fda_admin_app/bloc/register/register_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

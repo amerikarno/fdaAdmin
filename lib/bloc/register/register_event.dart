@@ -1,16 +1,15 @@
 part of 'register_bloc.dart';
 
-sealed class RegisterEvent extends Equatable {
-  const RegisterEvent();
+sealed class RegisterEvent extends FDAEvent {
+  RegisterEvent();
 
-  @override
   List<Object> get props => [];
 }
 
 class FirstNameENChange extends RegisterEvent {
   final String firstName;
 
-  const FirstNameENChange(this.firstName);
+  FirstNameENChange(this.firstName);
 
   @override
   List<Object> get props => [firstName];
@@ -19,7 +18,7 @@ class FirstNameENChange extends RegisterEvent {
 class LastNameENChanged extends RegisterEvent {
   final String lastName;
 
-  const LastNameENChanged(this.lastName);
+  LastNameENChanged(this.lastName);
 
   @override
   List<Object> get props => [lastName];
@@ -28,7 +27,7 @@ class LastNameENChanged extends RegisterEvent {
 class FirstNameTHChange extends RegisterEvent {
   final String firstName;
 
-  const FirstNameTHChange(this.firstName);
+  FirstNameTHChange(this.firstName);
 
   @override
   List<Object> get props => [firstName];
@@ -37,7 +36,7 @@ class FirstNameTHChange extends RegisterEvent {
 class LastNameTHChanged extends RegisterEvent {
   final String lastName;
 
-  const LastNameTHChanged(this.lastName);
+  LastNameTHChanged(this.lastName);
 
   @override
   List<Object> get props => [lastName];
@@ -46,7 +45,7 @@ class LastNameTHChanged extends RegisterEvent {
 class AddressChange extends RegisterEvent {
   final String address;
 
-  const AddressChange(this.address);
+  AddressChange(this.address);
 
   @override
   List<Object> get props => [address];
@@ -55,7 +54,7 @@ class AddressChange extends RegisterEvent {
 class VilageNumberChnage extends RegisterEvent {
   final String vilageNumber;
 
-  const VilageNumberChnage(this.vilageNumber);
+  VilageNumberChnage(this.vilageNumber);
 
   @override
   List<Object> get props => [vilageNumber];
@@ -64,7 +63,7 @@ class VilageNumberChnage extends RegisterEvent {
 class VilageNameChange extends RegisterEvent {
   final String vilageName;
 
-  const VilageNameChange(this.vilageName);
+  VilageNameChange(this.vilageName);
 
   @override
   List<Object> get props => [vilageName];
@@ -73,7 +72,7 @@ class VilageNameChange extends RegisterEvent {
 class SubStreetChange extends RegisterEvent {
   final String subStreet;
 
-  const SubStreetChange(this.subStreet);
+  SubStreetChange(this.subStreet);
 
   @override
   List<Object> get props => [subStreet];
@@ -82,7 +81,7 @@ class SubStreetChange extends RegisterEvent {
 class StreetChnage extends RegisterEvent {
   final String street;
 
-  const StreetChnage(this.street);
+  StreetChnage(this.street);
 
   @override
   List<Object> get props => [street];
@@ -91,7 +90,7 @@ class StreetChnage extends RegisterEvent {
 class SubDistrictChange extends RegisterEvent {
   final String subDistrict;
 
-  const SubDistrictChange(this.subDistrict);
+  SubDistrictChange(this.subDistrict);
 
   @override
   List<Object> get props => [subDistrict];
@@ -100,7 +99,7 @@ class SubDistrictChange extends RegisterEvent {
 class DistrictChnage extends RegisterEvent {
   final String district;
 
-  const DistrictChnage(this.district);
+  DistrictChnage(this.district);
 
   @override
   List<Object> get props => [district];
@@ -109,7 +108,7 @@ class DistrictChnage extends RegisterEvent {
 class ProvinceChange extends RegisterEvent {
   final String province;
 
-  const ProvinceChange(this.province);
+  ProvinceChange(this.province);
 
   @override
   List<Object> get props => [province];
@@ -118,7 +117,7 @@ class ProvinceChange extends RegisterEvent {
 class CountryChange extends RegisterEvent {
   final String country;
 
-  const CountryChange(this.country);
+  CountryChange(this.country);
 
   @override
   List<Object> get props => [country];
@@ -127,7 +126,7 @@ class CountryChange extends RegisterEvent {
 class ZipcodeChange extends RegisterEvent {
   final String zipcode;
 
-  const ZipcodeChange(this.zipcode);
+  ZipcodeChange(this.zipcode);
 
   @override
   List<Object> get props => [zipcode];
@@ -136,7 +135,7 @@ class ZipcodeChange extends RegisterEvent {
 class AgreementChange extends RegisterEvent {
   final bool acceptAgreement;
 
-  const AgreementChange(this.acceptAgreement);
+  AgreementChange(this.acceptAgreement);
 
   @override
   List<Object> get props => [acceptAgreement];

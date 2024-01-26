@@ -1,6 +1,6 @@
 part of 'register_bloc.dart';
 
-class RegisterState extends Equatable {
+class RegisterState extends FDAState {
   final String firstNameEN;
   final String lastNameEN;
   final String firstNameTH;
@@ -17,7 +17,7 @@ class RegisterState extends Equatable {
   final String zipcode;
   final bool acceptAgreement;
 
-  const RegisterState({
+  RegisterState({
     required this.firstNameEN,
     required this.lastNameEN,
     required this.firstNameTH,
@@ -71,7 +71,6 @@ class RegisterState extends Equatable {
     );
   }
 
-  @override
   List<Object> get props => [
         firstNameEN,
         lastNameEN,

@@ -1,9 +1,9 @@
-import 'package:finansiada/appRoutes.dart';
-import 'package:finansiada/bloc/homePage/home_page_bloc.dart';
-import 'package:finansiada/bloc/register/register_bloc.dart';
-import 'package:finansiada/pages/home/widget/formLogin.dart';
-import 'package:finansiada/pages/home/widget/formRegister.dart';
-import 'package:finansiada/utils/imageSize.dart';
+import 'package:fda_admin_app/app_routes.dart';
+import 'package:fda_admin_app/bloc/homePage/home_page_bloc.dart';
+import 'package:fda_admin_app/bloc/register/register_bloc.dart';
+import 'package:fda_admin_app/pages/home/widget/form_login.dart';
+import 'package:fda_admin_app/pages/home/widget/form_register.dart';
+import 'package:fda_admin_app/utils/image_size.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -121,7 +121,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     onPressed: () {
                                       if (stateRegister.acceptAgreement) {
                                         if (formKey.currentState!.validate()) {
-                                          print("this form is validated");
+                                          debugPrint("this form is validated");
                                           Navigator.pushNamed(context, AppRoute.register);
                                         } else {
                                           var snackBar = const SnackBar(

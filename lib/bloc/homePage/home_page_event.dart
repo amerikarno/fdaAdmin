@@ -1,9 +1,8 @@
 part of 'home_page_bloc.dart';
 
-class HomePageEvent extends Equatable {
-  const HomePageEvent();
+class HomePageEvent extends FDAEvent {
+  HomePageEvent();
 
-  @override
   List<Object> get props => [];
 }
 
