@@ -1,4 +1,4 @@
-part of 'home_page_bloc.dart';
+part of 'bloc.dart';
 
 class HomePageEvent extends FDAEvent {
   HomePageEvent();
